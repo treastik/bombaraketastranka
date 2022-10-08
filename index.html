@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaCity</title>
+</head>
+<body>
+<!--Menu-->
+<header class="header">
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/logo.png" alt="logo stranky">
+    </a>
+  </div>
+
+  <div class="navigation">
+    <input type="checkbox" class="toggle-menu">
+    <div class="hamburger"></div>
+    <ul class="menu">
+      <li class="active"><a href="">Domov</a></li>
+      <li><a href="about.html">Informácie</a></li>
+      <li><a href="galery.html">Galéria</a></li>
+      <li><a href="">Kontakt</a></li>
+     </ul>
+  </div>
+</header>
+<!---->
+
+<!--Hlavna Sekcia-->
+    <div class="bg-image">
+        <div class="hero">
+        <h1>AquaCity<br>Poprad</h1>
+        <div id="focus"></div>
+        </div>
+    </div>
+<!---->   
+
+<!--Dolna sekcia-->
+<section class="contact-area" id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+              <div class="contact-content text-center">
+                  <a href="#"><img src="img/logo.png" alt="logo"></a>
+                  <p>Sme jediné Aqua City na Slovenski s neobmedzeným množstvom zábavy a zážitkov.</p>
+                  <div class="hr"></div>
+                  <h6>Športová 1397/1, 058 01 Poprad-Spišská Sobota</h6>
+                  <h6>052/785 11 11<span>|</span>052/785 11 11</h6>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<footer>
+  <p>Copyright &copy; 2022 <img src="img/spsjm.png" alt="logo"> Miroslav Federl SPŠJM</p>
+</footer>
+</body>
+
+   <script>
+    let focus = document.getElementById("focus");
+
+    let focusHalfWidth = focus.offsetWidth/2;
+
+    document.onmousemove = function(e) {
+    focus.style.left = e.pageX - focusHalfWidth + "px";
+    focus.style.top = e.pageY - focusHalfWidth + "px";
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

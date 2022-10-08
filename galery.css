@@ -1,0 +1,41 @@
+.container{
+    max-width: 85%;
+    margin:20px auto;
+  }
+  
+  .container .image-container{
+    columns:3 250px;
+    gap:15px;
+  }
+  
+  .container .image-container img{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.container .title{
+    font-size: 25px;
+    background: rgb(17, 29, 109);
+    color:#fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding:15px;
+    font-family: 'Merienda', cursive;
+    text-shadow: 2px 2px 0 black;
+    letter-spacing: 5px;
+  }
+
+  body {
+    background: url(img/img6.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px);
+  }
+  
